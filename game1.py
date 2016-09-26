@@ -21,6 +21,8 @@ while(1):
 					if count==f1:
 								print"turn down"
 								break
+					else:
+								print"u lost"
 while(1):
 		key1=msvcrt.getch()
 		if key1=='s':
@@ -31,6 +33,8 @@ while(1):
 									print"                            turn right"
 									print"                                       ",
 									break
+						else:
+									print"u lost"
 while(1):
 		key2=msvcrt.getch()
 		if key2=='d':
@@ -40,6 +44,8 @@ while(1):
 
 						if count2==f3:
 									break
+						else:
+									print"u lost"
 time_elapsed=time.time()-s_time
 print"u have completed the game"
 print"the time taken is"+str(time_elapsed)
