@@ -1,13 +1,13 @@
 import mvcrt
 import time
 
-f1=5
-f2=10
-f3=5
+f1=10
+f2=20
+f3=30
 
 count=0
-count1=0
-count2=0
+count1=10
+count2=20
 print"press enter key to proceed!!"
 
 raw_input()
@@ -21,31 +21,33 @@ while(1)
 		if count=f1:
 			print"turn down"
 			break
-		else:
-			print"u lost the game"
-			exit(1)
+	else:
+		print"u lost the game"
+		exit(1)
 while(1):
 	key1=msvcrt.getch()
-		if key1=='s' :
-			count1=count1+1
-			print"         |",
-			print"         |",
-			print"         ^",
-			if count1=f2:
-				print"turn right"
-				break
-			else:
-				print"u lost the game"	
-				exit(1)
+	if key1=='s' :
+		count1=count1+1
+		print"                 ",
+		print"         |"
+		if count1=f2:
+			print"         turn right"
+			print"                          ",
+			break
+	else:
+		print"u lost the game"	
+		exit(1)
 while(1):
 	key2=msvcrt.getch()
-		if key2=='d':
-			count2=count2+1
-			print"-->",
-			if count2=f3:
-				print"u won thw game"
-				break
-			time_elapsed=time.time()-s_time
-			print"u have completed the game"
-			print"the time taken is"+str(time_elapsed)
+	if key2=='d':
+		count2=count2+1
+		print"-->",
+		if count2=f3:
+			break
+	else:
+		print"u lost"
+		exit(1)
+time_elapsed=time.time()-s_time
+print"u have completed the game"
+print"the time taken is"+str(time_elapsed)
 
