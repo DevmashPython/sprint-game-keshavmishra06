@@ -53,3 +53,7 @@ time_elapsed=time.time()-s_time
 print"u have completed the game"
 print"the time taken is"+str(time_elapsed)
 
+''' Add controls for the game. Like press what to do what. 
+ex. Press d to move right.
+
+''''
